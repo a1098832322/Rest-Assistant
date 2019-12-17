@@ -1,0 +1,40 @@
+<idea-plugin>
+    <id>com.your.company.unique.plugin.id</id>
+    <name>休息提示小助手</name>
+    <version>1.0</version>
+    <vendor email="1098832322@qq.com" url="http://wishes-blog.cn">Wishes丶</vendor>
+
+    <description>即使是加班狂魔和肝帝们在工作之余也不要忘记了休息哟~
+    </description>
+
+    <change-notes>V1.0</change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationService serviceInterface="service.AlertService"
+                            serviceImplementation="service.impl.AlertServiceImpl"/>
+        <applicationService serviceInterface="service.ScheduledService"
+                            serviceImplementation="service.impl.ScheduledServiceImpl"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="Assistant.Setting" class="SettingAction" text="Assistant Setting" description="休息提示小助手设置">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="alt c"/>
+        </action>
+        <action id="StopAction" class="StopAction" text="Assistant Stop" description="让小助手停止提示">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="alt s"/>
+        </action>
+    </actions>
+
+</idea-plugin>
