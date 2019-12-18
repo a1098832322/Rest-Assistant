@@ -59,7 +59,7 @@ public interface ScheduledService {
         if (ApplicationManager.getApplication() != null) {
             return ServiceManager.getService(ScheduledService.class);
         } else {
-            return (ScheduledService) ScheduledServiceImpl.getInstance();
+            return ScheduledServiceImpl.getInstance();
         }
     }
 }
