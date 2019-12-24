@@ -18,14 +18,24 @@ public class Constant {
         public static final String SETTING_WINDOW_TITLE = "Assistant Setting";
 
         /**
-         * 窗体提示文本
+         * 窗体模型选择器提示文本
          */
-        public static final String SETTING_ALERT_TEXT = "请选择提醒周期（单位：分钟）:";
+        public static final String SETTING_MODEL_SELECTOR_TEXT = "请选择模型:";
 
         /**
-         * 初始化的可选数组
+         * 窗体时间选择器提示文本
          */
-        public static final String[] SELECT_ARRAY = new String[]{"30", "60", "90", "120", "240", "360", "480"};
+        public static final String SETTING_TIME_SELECTOR_TEXT = "请选择提醒周期（单位：分钟）:";
+
+        /**
+         * 初始化模型的可选数组
+         */
+        public static final String[] MODEL_SELECT_ARRAY = new String[]{"CXK", "锦鲤杨超越", "奥利给", "超励志奥利给"};
+
+        /**
+         * 初始化时间的可选数组
+         */
+        public static final String[] TIME_SELECT_ARRAY = new String[]{"30", "60", "90", "120", "240", "360", "480"};
     }
 
     /**
@@ -55,7 +65,22 @@ public class Constant {
         /**
          * CXK
          */
-        CXK("/icons/cxk_basketball.gif", "CXK提醒您", "工作{0}分钟辛苦了吧？  欣赏一段鸡你太美休息一下吧~~ ！");
+        CXK("/icons/cxk_basketball.gif", "CXK提醒您", "工作{0}分钟辛苦了吧？  欣赏一段鸡你太美休息一下吧~~ ！"),
+
+        /**
+         * 派大星
+         */
+        OLG1("/icons/olg1.jpg", "小助手提醒您", "今天也要加油噢~！"),
+
+        /**
+         * 巨魔
+         */
+        OLG2("/icons/olg2.jpg", "巨魔提醒您", "我们不论遇到什么困难，都要微笑着面对它。加油！奥利给！！"),
+
+        /**
+         * 杨超越
+         */
+        YCY("/icons/ycy.gif", "锦鲤祝您", "BUG退散！程序不崩！心想事成！");
 
         /**
          * 装载图片路径
