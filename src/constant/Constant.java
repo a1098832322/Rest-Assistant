@@ -30,7 +30,7 @@ public class Constant {
         /**
          * 初始化模型的可选数组
          */
-        public static final String[] MODEL_SELECT_ARRAY = new String[]{"CXK", "锦鲤杨超越", "奥利给", "超励志奥利给"};
+        public static final String[] MODEL_SELECT_ARRAY = new String[]{"CXK", "锦鲤杨超越", "奥利给", "超励志奥利给", "三點几了，飲茶先啦", "提醒摸魚小助手", "提醒努力工作小助手"};
 
         /**
          * 初始化时间的可选数组
@@ -80,7 +80,22 @@ public class Constant {
         /**
          * 杨超越
          */
-        YCY("/icons/ycy.gif", "锦鲤祝您", "BUG退散！程序不崩！心想事成！");
+        YCY("/icons/ycy.gif", "锦鲤祝您", "BUG退散！程序不崩！心想事成！"),
+
+        /**
+         * 3点饮茶
+         */
+        DRINK_TEA("/icons/drink_tea.jpg", "喂！朋友！", "三點几了，飲茶先啦！"),
+
+        /**
+         * 摸鱼
+         */
+        TOUCH_FISH("/icons/moyu.jpg", "摸鱼提醒小助手提醒您", "该摸鱼了！"),
+
+        /**
+         * 努力工作
+         */
+        WORK_HARD("/icons/workhard.jpg", "努力工作提醒小助手提醒您", "别摸了，该努力工作了！");
 
         /**
          * 装载图片路径

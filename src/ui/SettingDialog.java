@@ -64,7 +64,7 @@ public class SettingDialog extends DialogWrapper {
         setTitle(title);
         this.modelText = modelText;
         this.timeText = timeText;
-        this.modelSelectedValues =  initModelSelectValues();
+        this.modelSelectedValues = initModelSelectValues();
         this.timeSelectedValues = isEmpty(timeSelectedValues) ? initTimeSelectValues() : timeSelectedValues;
         this.defaultModelValue = readFromStorage(true);
         this.defaultTimeValue = readFromStorage(false);
@@ -155,6 +155,12 @@ public class SettingDialog extends DialogWrapper {
                 return Constant.AlertDialog.OLG1.name();
             case 3:
                 return Constant.AlertDialog.OLG2.name();
+            case 4:
+                return Constant.AlertDialog.DRINK_TEA.name();
+            case 5:
+                return Constant.AlertDialog.TOUCH_FISH.name();
+            case 6:
+                return Constant.AlertDialog.WORK_HARD.name();
             default:
                 return Constant.AlertDialog.CXK.name();
         }
