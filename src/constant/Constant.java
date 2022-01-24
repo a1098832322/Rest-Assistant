@@ -30,7 +30,7 @@ public class Constant {
         /**
          * 初始化模型的可选数组
          */
-        public static final String[] MODEL_SELECT_ARRAY = new String[]{"CXK", "锦鲤杨超越", "奥利给", "超励志奥利给", "三點几了，飲茶先啦", "提醒摸魚小助手", "提醒努力工作小助手"};
+        public static final String[] MODEL_SELECT_ARRAY = new String[]{"CXK", "锦鲤杨超越", "奥利给", "超励志奥利给", "三點几了，飲茶先啦", "提醒摸魚小助手", "提醒努力工作小助手", "提醒喝水小助手"};
 
         /**
          * 初始化时间的可选数组
@@ -86,6 +86,11 @@ public class Constant {
          * 3点饮茶
          */
         DRINK_TEA("/icons/drink_tea.jpg", "喂！朋友！", "三點几了，飲茶先啦！"),
+
+        /**
+         * 提醒喝水
+         */
+        DRINK_WATER("/icons/drink_water.jpg", "水宝提醒你", "多喝水不得肾结石哟！"),
 
         /**
          * 摸鱼

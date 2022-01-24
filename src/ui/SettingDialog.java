@@ -161,6 +161,8 @@ public class SettingDialog extends DialogWrapper {
                 return Constant.AlertDialog.TOUCH_FISH.name();
             case 6:
                 return Constant.AlertDialog.WORK_HARD.name();
+            case 7:
+                return Constant.AlertDialog.DRINK_WATER.name();
             default:
                 return Constant.AlertDialog.CXK.name();
         }

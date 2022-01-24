@@ -1,10 +1,11 @@
 <idea-plugin>
     <id>com.your.company.unique.plugin.id</id>
     <name>休息提示小助手</name>
-    <version>1.2</version>
+    <version>1.2.1</version>
     <vendor email="1098832322@qq.com" url="http://wishes-blog.cn">Wishes丶</vendor>
 
     <description>休息提示小助手: 即使是加班狂魔和肝帝们在工作之余也不要忘记了休息哟~
+        V1.2.1 新增：每日提醒饮水小助手（水宝）
         V1.2 新增：每日饮茶提醒小助手、摸鱼提醒小助手和努力工作小助手
         V1.1 新增：杨超越、派大星、巨魔三个模型。加上之前的坤坤，现在有4个模型可供选择啦~
     </description>
@@ -12,6 +13,7 @@
     <change-notes>V1.0 初次提交
         V1.1 新增：杨超越、派大星、巨魔三个模型。加上之前的坤坤，现在有4个模型可供选择啦~
         V1.2 新增：每日饮茶提醒小助手、摸鱼提醒小助手和努力工作小助手
+        V1.2.1 新增：每日提醒饮水小助手（水宝），帮助大家远离肾结石！
     </change-notes>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
